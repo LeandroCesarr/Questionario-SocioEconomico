@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Relatorio</title>
+	<style>
+		* {
+			background-color: #eeeeee;
+		}
+		div {
+			width: 800px;
+			background-color: white;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<h2 style="margin: 0">Relarotio Teste PAO</h1>
+	<canvas class="line-chart"></canvas>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+
+	<script>
+		var ctx = document.getElementsByClassName("line-chart");
+
+		var chartGraph = new Chart(ctx, {
+			type: 'pie',
+			data: {
+				labels: ["Masculino", "Feminino"],
+				datasets: 
+					[{
+						label: "Taxa",
+						data: [65,35],
+						backgroundColor: ["#3e95cd", "#8e5ea2"],
+					}],
+			}
+		}); 
+
+
+	</script>
+</div>
+
+
+
+
+
+</body>
+</html>
