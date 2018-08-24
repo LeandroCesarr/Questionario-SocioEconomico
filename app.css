@@ -1,5 +1,5 @@
 body {
-	background-color: #b3f3ed;
+	background-color: #4682B4;
 	max-width: auto;
 }
 
@@ -11,7 +11,8 @@ body {
 	margin: 10px auto;
 	padding: 10px;
 	background-color: #ffffff;
-	box-shadow: 0px 0px 20px #01A9DB;
+	box-shadow: 0px 0px 20px #483D8B;
+	border-radius: 4px;
 }
 
 .s-title__logo {
@@ -38,6 +39,10 @@ body {
 .s-nav__graph  {
 	text-align: center;
 	margin: 0 20px 60px;
+	position: fixed;
+	background-color: #ffffff;
+	border-radius: 4px;
+	width: 114px;
 }
 
 .s-nav__graph--ancor {
@@ -48,13 +53,15 @@ body {
 	text-transform: uppercase;
 	padding: 10px;
 	border-bottom: 3px solid #b3f3ed;
+	display: block;
+	margin: 10px;
 }
 
 .s-nav__graph--ancor:hover {
-	background-color: #4ee5d6;
+	background-color: #4682B4;
 	border-bottom: 5px solid #b3f3ed;
 	padding: 16px;
-	color: #086A87;
+	color: #ffffff;
 	font-weight: bolder;
 	border-radius: 6px;
 	transition: .5s;

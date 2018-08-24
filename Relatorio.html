@@ -12,7 +12,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
 <!-- //Import -->
 
-<div class="t-container">
+<nav class="s-nav__graph">
+	<a class="s-nav__graph--ancor" href="#Home">Home</a>
+	<a class="s-nav__graph--ancor" href="#Idade">Grafico 1</a>
+	<a class="s-nav__graph--ancor" href="#Sexo">Grafico 2</a>
+	<a class="s-nav__graph--ancor" href="#corRaca">Grafico 3</a>
+	<a class="s-nav__graph--ancor" href="#">Grafico 4</a>
+	<a class="s-nav__graph--ancor" href="#">Grafico 5</a>
+	<a class="s-nav__graph--ancor" href="#">Grafico 6</a>
+</nav>
+
+<div class="t-container" id="Home">
 	<h2><img class="s-title__logo" src="logo-fatec.png"></h2>
 	<h1 class="s-title">SISTEMA DE ACOMPANHAMENTO DO PERFIL SÓCIOECONÔMICO DOS ALUNOS DA FATEC FRANCA</h1>
 	<p class="s-title--description">
@@ -21,13 +31,6 @@
 		Lara Luiza<br />
 		Guilherme Prado<br />
 	</p>
-	<nav class="s-nav__graph">
-		<a class="s-nav__graph--ancor" href="#Idade">Grafico 1</a>
-		<a class="s-nav__graph--ancor" href="#Sexo">Grafico 2</a>
-		<a class="s-nav__graph--ancor" href="#">Grafico 3</a>
-		<a class="s-nav__graph--ancor" href="#">Grafico 4</a>
-		<a class="s-nav__graph--ancor" href="#">Grafico 5</a>
-	</nav>
 
 	<span class="s-title__data">FRANCA<br /> AGOSTO / 2018</span>
 
@@ -44,7 +47,7 @@
 		<canvas class="sexo"></canvas>
 	</div>
 
-	<div class="s-show-datas">
+	<div class="s-show-datas" id="corRaca">
 		<h2 class="s-title__graph">Cor/Raça</h2>
 		<canvas class="corRaca"></canvas>
 	</div>
