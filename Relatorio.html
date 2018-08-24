@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Relatorio</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="app.css">
 </head>
 <body>
@@ -20,25 +21,57 @@
 		Lara Luiza<br />
 		Guilherme Prado<br />
 	</p>
+	<nav class="s-nav__graph">
+		<a class="s-nav__graph--ancor" href="#Idade">Grafico 1</a>
+		<a class="s-nav__graph--ancor" href="#Sexo">Grafico 2</a>
+		<a class="s-nav__graph--ancor" href="#">Grafico 3</a>
+		<a class="s-nav__graph--ancor" href="#">Grafico 4</a>
+		<a class="s-nav__graph--ancor" href="#">Grafico 5</a>
+	</nav>
+
 	<span class="s-title__data">FRANCA<br /> AGOSTO / 2018</span>
+
 </div>
 
 <div class="t-container">
 	<div class="s-show-datas">
-		<h2 class="s-title__graph">Faixa Etária</h2>
+		<h2 id="Idade" class="s-title__graph">Faixa Etária</h2>
 		<canvas class="idade"></canvas>
+	</div>
+
+	<div class="s-show-datas">
+		<h2 id="Sexo" class="s-title__graph">Sexo</h2>
+		<canvas class="sexo"></canvas>
+	</div>
+
+	<div class="s-show-datas">
+		<h2 class="s-title__graph">Cor/Raça</h2>
+		<canvas class="corRaca"></canvas>
+	</div>
+
+	<div class="s-show-datas">
+		<h2 class="s-title__graph">Religião</h2>
+		<canvas class="religion"></canvas>
 	</div>
 
 	<div class="s-show-datas">
 		<h2 class="s-title__graph">Estado Civil</h2>
 		<canvas class="estadoCivil"></canvas>
 	</div>
-</div>
 
-<div class="t-container">
+	<div class="s-show-datas">
+		<h2 class="s-title__graph">Deficiencia</h2>
+		<canvas class="yasuo"></canvas>
+	</div>
+
 	<div class="s-show-datas">
 		<h2 class="s-title__graph">Filhos</h2>
 		<canvas class="filhos"></canvas>
+	</div>
+
+	<div class="s-show-datas">
+		<h2 class="s-title__graph">Atualmente, qual area trabalha</h2>
+		<canvas class="jobs"></canvas>
 	</div>
 </div>
 
@@ -50,48 +83,92 @@
 
 
 	<script>
-		var ctx = document.getElementsByClassName("idade");
-		var ctx2 = document.getElementsByClassName("estadoCivil");
-		var ctx3 = document.getElementsByClassName("filhos");
+		
+			var ctx  = document.getElementsByClassName("idade");
+			var ctx2 = document.getElementsByClassName("estadoCivil");
+			var ctx3 = document.getElementsByClassName("filhos");
+			var ctx4 = document.getElementsByClassName("sexo");
+			var ctx5 = document.getElementsByClassName("corRaca");
+			var ctx6 = document.getElementsByClassName("religion");
 
-		var chartGraph = new Chart(ctx, {
-			type: 'pie',
-			data: {
-				labels: ["Até 20 anos", "De 21 a 30 anos", "De 31 a 40", "Acima de 40"],
-				datasets: 
-					[{
-						label: "Taxa",
-						data: [26,43,11,20],
-						backgroundColor: ["#3e95cd", "#8e5ea2", "#03da5a", "#dac503"],
-					}],
-			}
-		}); 
+			var chartGraph = new Chart(ctx, {
+				type: 'doughnut',
+				data: {
+					labels: ["Até 20 anos", "De 21 a 30 anos", "De 31 a 40", "Acima de 40"],
+					datasets: 
+						[{
+							label: "Taxa",
+							data: [53,33,9,5],
+							backgroundColor: ["#3e95cd", "#8e5ea2", "#03da5a", "#dac503"],
+						}],
+				}
+			}); 
 
-		var chartGraph2 = new Chart(ctx2, {
-			type: 'pie',
-			data: {
-				labels: ["Solteiro", "Casado", "Outros"],
-				datasets: 
-					[{
-						label: "Taxa",
-						data: [71, 26, 3],
-						backgroundColor: ["#356859", "#37966F", "#B9E4C9"],
-					}],
-			}
-		});
+			var chartGraph4 = new Chart(ctx4, {
+				type: 'doughnut',
+				data: {
+					labels: ["Masculino", "Feminino"],
+					datasets: 
+						[{
+							label: "Taxa",
+							data: [81, 19],
+							backgroundColor: ["#EE82EE", "#9400D3"],
+						}],
+				}
+			}); 
 
-		var chartGraph3 = new Chart(ctx3, {
-			type: 'doughnut',
-			data: {
-				labels: ["Sim", "Não"],
-				datasets: 
-					[{
-						label: "Taxa",
-						data: [31, 69],
-						backgroundColor: ["#FD5523", "#C51162"],
-					}],
-			}
-		});
+			var chartGraph2 = new Chart(ctx2, {
+				type: 'doughnut',
+				data: {
+					labels: ["Solteiro", "Casado", "Outros"],
+					datasets: 
+						[{
+							label: "Taxa",
+							data: [82, 15, 3],
+							backgroundColor: ["#356859", "#37966F", "#B9E4C9"],
+						}],
+				}
+			});
+
+			var chartGraph3 = new Chart(ctx3, {
+				type: 'doughnut',
+				data: {
+					labels: ["Sim", "Não"],
+					datasets: 
+						[{
+							label: "Taxa",
+							data: [31, 69],
+							backgroundColor: ["#FD5523", "#C51162"],
+						}],
+				}
+			});
+
+			var chartGraph5 = new Chart(ctx5, {
+				type: 'doughnut',
+				data: {
+					labels: ["Branco", "Pardo", "Amarelo", "Preto", "Indigena", "Nao Declarado"],
+					datasets: 
+						[{
+							label: "Taxa",
+							data: [71, 21, 2, 5, 0, 2],
+							backgroundColor: ["#F08080", "#FF1493", "#1E90FF", "#FF6347", "#00FFFF", "#20B2AA"],
+						}],
+				}
+			});
+
+			var chartGraph6 = new Chart(ctx6, {
+				type: 'doughnut',
+				data: {
+					labels: ["Católico", "Evagélico", "Espirita", "Budista", "Umbanda", "Candomblé", "Agnostico", "Ateu", "Outros"],
+					datasets: 
+						[{
+							label: "Taxa",
+							data: [47, 16, 2, 0, 0, 0, 14, 16, 7],
+							backgroundColor: ["#F08080", "#FF1493", "#1E90FF", "#FF6347", "#00FFFF", "#20B2AA"],
+						}],
+				}
+			});
+		
 
 
 	</script>
