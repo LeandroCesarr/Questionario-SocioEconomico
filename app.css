@@ -108,5 +108,10 @@ body {
 
 	.s-nav__graph-active {
 		display: block;
+		width: 300px;
+	}
+
+	.s-nav__graph--ancor {
+		width: auto;
 	}
 }
