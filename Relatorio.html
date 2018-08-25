@@ -5,21 +5,46 @@
 	<title>Relatorio</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="app.css">
+	<script type="text/javascript" src="app.js"></script>
 </head>
 <body>
+
 
 <!-- CDN Import Library -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
 <!-- //Import -->
 
-<nav class="s-nav__graph">
+
+<button class="s-nav__menu--mobile" onclick="myFunction()">X</button>
+
+<nav class="s-nav__graph" id="NavMenu">
 	<a class="s-nav__graph--ancor" href="#Home">Home</a>
-	<a class="s-nav__graph--ancor" href="#Idade">Grafico 1</a>
-	<a class="s-nav__graph--ancor" href="#Sexo">Grafico 2</a>
-	<a class="s-nav__graph--ancor" href="#corRaca">Grafico 3</a>
-	<a class="s-nav__graph--ancor" href="#">Grafico 4</a>
-	<a class="s-nav__graph--ancor" href="#">Grafico 5</a>
-	<a class="s-nav__graph--ancor" href="#">Grafico 6</a>
+	<a class="s-nav__graph--ancor" href="#grafico01">Grafico 1</a>
+	<a class="s-nav__graph--ancor" href="#grafico02">Grafico 2</a>
+	<a class="s-nav__graph--ancor" href="#grafico03">Grafico 3</a>
+	<a class="s-nav__graph--ancor" href="#grafico04">Grafico 4</a>
+	<a class="s-nav__graph--ancor" href="#grafico05">Grafico 5</a>
+	<a class="s-nav__graph--ancor" href="#grafico06">Grafico 6</a>
+	<a class="s-nav__graph--ancor" href="#grafico07">Grafico 7</a>
+	<a class="s-nav__graph--ancor" href="#grafico08">Grafico 8</a>
+	<a class="s-nav__graph--ancor" href="#grafico09">Grafico 9</a>
+	<a class="s-nav__graph--ancor" href="#grafico10">Grafico 10</a>
+	<a class="s-nav__graph--ancor" href="#grafico11">Grafico 11</a>
+	<a class="s-nav__graph--ancor" href="#grafico12">Grafico 12</a>
+	<a class="s-nav__graph--ancor" href="#grafico13">Grafico 13</a>
+	<a class="s-nav__graph--ancor" href="#grafico14">Grafico 14</a>
+	<a class="s-nav__graph--ancor" href="#grafico15">Grafico 15</a>
+	<a class="s-nav__graph--ancor" href="#grafico16">Grafico 16</a>
+	<a class="s-nav__graph--ancor" href="#grafico17">Grafico 17</a>
+	<a class="s-nav__graph--ancor" href="#grafico18">Grafico 18</a>
+	<a class="s-nav__graph--ancor" href="#grafico19">Grafico 19</a>
+	<a class="s-nav__graph--ancor" href="#grafico20">Grafico 20</a>
+	<a class="s-nav__graph--ancor" href="#grafico21">Grafico 21</a>
+	<a class="s-nav__graph--ancor" href="#grafico22">Grafico 22</a>
+	<a class="s-nav__graph--ancor" href="#grafico23">Grafico 23</a>
+	<a class="s-nav__graph--ancor" href="#grafico24">Grafico 24</a>
+	<a class="s-nav__graph--ancor" href="#grafico25">Grafico 25</a>
+
 </nav>
 
 <div class="t-container" id="Home">
@@ -38,44 +63,126 @@
 
 <div class="t-container">
 	<div class="s-show-datas">
-		<h2 id="Idade" class="s-title__graph">Faixa Etária</h2>
+		<h2 id="grafico01" class="s-title__graph">Faixa Etária</h2>
 		<canvas class="idade"></canvas>
 	</div>
 
 	<div class="s-show-datas">
-		<h2 id="Sexo" class="s-title__graph">Sexo</h2>
+		<h2 id="grafico02" class="s-title__graph">Sexo</h2>
 		<canvas class="sexo"></canvas>
 	</div>
 
-	<div class="s-show-datas" id="corRaca">
-		<h2 class="s-title__graph">Cor/Raça</h2>
-		<canvas class="corRaca"></canvas>
+	<div class="s-show-datas">
+		<h2  id="grafico03" class="s-title__graph">Cor/Raça</h2>
+		<canvas class="grafico03"></canvas>
 	</div>
 
 	<div class="s-show-datas">
-		<h2 class="s-title__graph">Religião</h2>
+		<h2 id="grafico04" class="s-title__graph">Religião</h2>
 		<canvas class="religion"></canvas>
 	</div>
 
 	<div class="s-show-datas">
-		<h2 class="s-title__graph">Estado Civil</h2>
+		<h2 id="grafico05" class="s-title__graph">Estado Civil</h2>
 		<canvas class="estadoCivil"></canvas>
 	</div>
 
 	<div class="s-show-datas">
-		<h2 class="s-title__graph">Deficiencia</h2>
+		<h2 id="grafico06" class="s-title__graph">Deficiencia</h2>
 		<canvas class="yasuo"></canvas>
 	</div>
 
 	<div class="s-show-datas">
-		<h2 class="s-title__graph">Filhos</h2>
+		<h2 id="grafico07" class="s-title__graph">Filhos</h2>
 		<canvas class="filhos"></canvas>
 	</div>
 
 	<div class="s-show-datas">
-		<h2 class="s-title__graph">Atualmente, qual area trabalha</h2>
+		<h2 id="grafico08" class="s-title__graph">Atualmente, qual area trabalha</h2>
 		<canvas class="jobs"></canvas>
 	</div>
+
+	<div class="s-show-datas">
+		<h2 id="grafico09" class="s-title__graph">Periodo no qual trabalha</h2>
+		<canvas class="periodoTrabalho"></canvas>
+	</div>
+
+	<div class="s-show-datas">
+		<h2 id="grafico10" class="s-title__graph">Estado</h2>
+		<canvas class="estado"></canvas>
+	</div>
+
+	<div class="s-show-datas">
+		<h2 id="grafico11" class="s-title__graph">Municipio</h2>
+		<canvas class="municipio"></canvas>
+	</div>
+
+	<div class="s-show-datas">
+		<h2 id="grafico12" class="s-title__graph">Situação domicialiar</h2>
+		<canvas class="domicilio"></canvas>
+	</div>
+
+	<div class="s-show-datas">
+		<h2 id="grafico13" class="s-title__graph">Tempo de moradia</h2>
+		<canvas class="tempoMoradio"></canvas>
+	</div>
+
+	<div class="s-show-datas">
+		<h2 id="grafico14" class="s-title__graph">Com quem mora</h2>
+		<canvas class="comQuemMora"></canvas>
+	</div>
+
+	<div class="s-show-datas">
+		<h2 id="grafico15" class="s-title__graph">Quantas pessoas compoem a familia</h2>
+		<canvas class="pessoasFamilia"></canvas>
+	</div>
+
+	<div class="s-show-datas">
+		<h2 id="grafico16" class="s-title__graph">Quantas pessoas da familia incluindo o mesmo exerce atividade remunerada</h2>
+		<canvas class="atividadeRemunerada"></canvas>
+	</div>
+
+	<div class="s-show-datas">
+		<h2 id="grafico17" class="s-title__graph">Possui quantos computadores em casa</h2>
+		<canvas class="pcsCasa"></canvas>
+	</div>
+
+	<div class="s-show-datas">
+		<h2 id="grafico18" class="s-title__graph">Qual o meio de locomoção utilizado para ir a escola</h2>
+		<canvas class="locomocao"></canvas>
+	</div>
+
+	<div class="s-show-datas">
+		<h2 id="grafico19" class="s-title__graph">Soma da renda familiar incluindo o mesmo</h2>
+		<canvas class="rendaFamiliar"></canvas>
+	</div>
+
+	<div class="s-show-datas">
+		<h2 id="grafico20" class="s-title__graph">Periodo que frequenta a escola</h2>
+		<canvas class="periodoEstudo"></canvas>
+	</div>
+
+	<div class="s-show-datas">
+		<h2 id="grafico21" class="s-title__graph">Na vida escolar, estudou em:</h2>
+		<canvas class="escolaridade"></canvas>
+	</div>
+
+	<div class="s-show-datas">
+		<h2 id="grafico22" class="s-title__graph">Tem conhecimento em informatica:</h2>
+		<canvas class="informatica"></canvas>
+		<canvas id="grafico23" class="informaticaTipos"></canvas>
+	</div>
+
+	<div id="grafico24" class="s-show-datas">
+		<h2 class="s-title__graph">Conhecimento em outros idiomas</h2>
+		<canvas class="idioma"></canvas>
+	</div>
+
+	<div class="s-show-datas">
+		<h2 id="grafico25" class="s-title__graph">Ja estudo na escola</h2>
+		<canvas class="jaEstudoufatec"></canvas>
+	</div>
+
 </div>
 
 
@@ -93,6 +200,8 @@
 			var ctx4 = document.getElementsByClassName("sexo");
 			var ctx5 = document.getElementsByClassName("corRaca");
 			var ctx6 = document.getElementsByClassName("religion");
+			var ctx7 = document.getElementsByClassName("yasuo");
+
 
 			var chartGraph = new Chart(ctx, {
 				type: 'doughnut',
@@ -168,6 +277,19 @@
 							label: "Taxa",
 							data: [47, 16, 2, 0, 0, 0, 14, 16, 7],
 							backgroundColor: ["#F08080", "#FF1493", "#1E90FF", "#FF6347", "#00FFFF", "#20B2AA"],
+						}],
+				}
+			});
+
+			var chartGraph7 = new Chart(ctx7, {
+				type: 'doughnut',
+				data: {
+					labels: ["Sim", "Não"],
+					datasets: 
+						[{
+							label: "Taxa",
+							data: [98,2],
+							backgroundColor: ["#3e95cd", "#8e5ea2"],
 						}],
 				}
 			});
