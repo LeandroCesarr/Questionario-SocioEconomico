@@ -90,6 +90,15 @@ body {
 	display: none;
 }
 
+.s-footer {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.s-footer p {
+	font-size: 12px;
+}
+
 @media (max-width: 480px) {
 	.s-title__logo {
 		width: 320px;
@@ -100,6 +109,15 @@ body {
 	.s-nav__menu--mobile {
 		display: block;
 		position: fixed;
+		background-color: #4682B4;
+		border: none;
+		border-radius: 4px;
+		color: #ffffff;
+		font-family: 'Roboto', sans-serif;
+		font-size: 18px;
+		padding: 0 20px 0 30px;
+		left: -10px;
+		top: -2px;
 	}
 
 	.s-nav__graph {
@@ -109,9 +127,26 @@ body {
 	.s-nav__graph-active {
 		display: block;
 		width: 300px;
+		margin-left: 0 !important;
+		margin-top: 16px !important;
+		box-shadow: 0px 0px 4px #4682B4;
 	}
 
 	.s-nav__graph--ancor {
 		width: auto;
+	}
+}
+
+@media (min-width: 869px) {
+	.s-nav__menu--mobile {
+		background-color: #87CEFA;
+		padding: 0 20px;
+		font-size: 22px;
+		top: 0;
+		left: 0;
+	}
+
+	.s-nav__graph-active {
+		margin-top: 24px !important;
 	}
 }
